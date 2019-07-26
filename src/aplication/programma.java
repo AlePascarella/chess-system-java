@@ -1,11 +1,13 @@
 package aplication;
 
 import tabuleiro.Posicao;
+import xadress.PartidaXadress;
+import xadress.PecaXadress;
 
 public class programma {
     public static void main(String[] args){
         
-        Posicao pos = new Posicao(3, 5);
-        System.out.println(pos);
+        PartidaXadress partidaXadress = new PartidaXadress();
+        UI.imprimeTabuleiro(partidaXadress.pecas());
     }
 }
